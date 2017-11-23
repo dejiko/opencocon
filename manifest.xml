@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote name="yocto" fetch="git://git.yoctoproject.org/" pushurl="git://git.yoctoproject.org/" />
+	<remote name="openembedded" fetch="git://git.openembedded.org/" pushurl="git://git.openembedded.org/" />
+	<remote name="OSSystems" fetch="git://github.com/OSSystems/" pushurl="git://github.com/OSSystems/" />
+	<remote name="linux-sunxi" fetch="git://github.com/linux-sunxi/" pushurl="git://github.com/linux-sunxi/" />
+	<remote name="meta-qt5" fetch="https://github.com/meta-qt5/" pushurl="https://github.com/meta-qt5/" />
+
+	<remote name="shimada" fetch="https://github.com/dejiko/" pushurl="https://github.com/dejiko/" />
+	
+	<default revision="master" />
+
+	<!-- Yocto Layers -->
+	<project path="poky" name="poky" remote="yocto" revision="pyro" />
+
+	<!-- Openembedded Layers -->
+	<project path="meta-openembedded" name="meta-openembedded" remote="openembedded" revision="pyro" />
+	<project path="meta-browser" name="meta-browser" remote="OSSystems" revision="master" />
+
+	<!-- function Layers -->
+	<project path="meta-qt5" name="meta-qt5" remote="meta-qt5" revision="pyro" />
+	<project path="meta-qt5-extra" name="meta-qt5-extra" remote="schnitzeltony" revision="1364d8a052ee198ec83e0826f1e0036d2772a319" />
+
+	<!-- distro Layers -->
+	<project path="meta-cocon" name="meta-cocon" remote="shimada" revision="master" />
+
+	<!-- bsp Layers -->
+	<project path="meta-raspberrypi" name="meta-raspberrypi" remote="yocto" revision="pyro" />
+	<project path="meta-sunxi" name="meta-sunxi" remote="linux-sunxi" revision="pyro" />
+	<project path="meta-coconport" name="meta-coconport" remote="shimada" revision="master" />
+</manifest>
