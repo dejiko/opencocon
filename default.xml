@@ -5,6 +5,7 @@
 	<remote name="OSSystems" fetch="git://github.com/OSSystems/" pushurl="git://github.com/OSSystems/" />
 	<remote name="linux-sunxi" fetch="git://github.com/linux-sunxi/" pushurl="git://github.com/linux-sunxi/" />
 	<remote name="meta-qt5" fetch="https://github.com/meta-qt5/" pushurl="https://github.com/meta-qt5/" />
+	<remote name="schnitzeltony" fetch="https://github.com/schnitzeltony/" pushurl="https://github.com/schnitzeltony/" />
 
 	<remote name="shimada" fetch="https://github.com/dejiko/" pushurl="https://github.com/dejiko/" />
 	
