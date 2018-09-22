@@ -12,21 +12,21 @@
 	<default revision="master" />
 
 	<!-- Yocto Layers -->
-	<project path="poky" name="poky" remote="yocto" revision="rocko" />
+	<project path="poky" name="poky" remote="yocto" revision="sumo" />
 
 	<!-- Openembedded Layers -->
-	<project path="meta-openembedded" name="meta-openembedded" remote="openembedded" revision="rocko" />
+	<project path="meta-openembedded" name="meta-openembedded" remote="openembedded" revision="sumo" />
 	<project path="meta-browser" name="meta-browser" remote="OSSystems" revision="master" />
 
 	<!-- function Layers -->
-	<project path="meta-qt5" name="meta-qt5" remote="meta-qt5" revision="rocko" />
+	<project path="meta-qt5" name="meta-qt5" remote="meta-qt5" revision="sumo" />
 	<project path="meta-qt5-extra" name="meta-qt5-extra" remote="schnitzeltony" revision="23698fafb7e489f21be088f2661597e8dde758a9" />
 
 	<!-- distro Layers -->
 	<project path="meta-cocon" name="meta-cocon" remote="shimada" revision="master" />
 
 	<!-- bsp Layers -->
-	<project path="meta-raspberrypi" name="meta-raspberrypi" remote="yocto" revision="rocko" />
-	<project path="meta-sunxi" name="meta-sunxi" remote="linux-sunxi" revision="rocko" />
+	<project path="meta-raspberrypi" name="meta-raspberrypi" remote="yocto" revision="sumo" />
+	<project path="meta-sunxi" name="meta-sunxi" remote="linux-sunxi" revision="sumo" />
 	<project path="meta-coconport" name="meta-coconport" remote="shimada" revision="master" />
 </manifest>
