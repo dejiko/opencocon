@@ -20,7 +20,7 @@
 
 	<!-- function Layers -->
 	<project path="meta-qt5" name="meta-qt5" remote="meta-qt5" revision="sumo" />
-	<project path="meta-qt5-extra" name="meta-qt5-extra" remote="schnitzeltony" revision="23698fafb7e489f21be088f2661597e8dde758a9" />
+	<project path="meta-qt5-extra" name="meta-qt5-extra" remote="schnitzeltony" revision="sumo" />
 
 	<!-- distro Layers -->
 	<project path="meta-cocon" name="meta-cocon" remote="shimada" revision="master" />
@@ -29,4 +29,5 @@
 	<project path="meta-raspberrypi" name="meta-raspberrypi" remote="yocto" revision="sumo" />
 	<project path="meta-sunxi" name="meta-sunxi" remote="linux-sunxi" revision="sumo" />
 	<project path="meta-coconport" name="meta-coconport" remote="shimada" revision="master" />
+	<project path="meta-liveimage-init" name="meta-liveimage-init" remote="shimada" revision="master" />
 </manifest>
