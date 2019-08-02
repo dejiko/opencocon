@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="yocto" fetch="git://git.yoctoproject.org/" pushurl="git://git.yoctoproject.org/" />
+	<remote name="yocto" fetch="https://git.yoctoproject.org/git/" pushurl="https://git.yoctoproject.org/git/" />
 	<remote name="openembedded" fetch="git://git.openembedded.org/" pushurl="git://git.openembedded.org/" />
 	<remote name="OSSystems" fetch="git://github.com/OSSystems/" pushurl="git://github.com/OSSystems/" />
 	<remote name="linux-sunxi" fetch="git://github.com/linux-sunxi/" pushurl="git://github.com/linux-sunxi/" />
 	<remote name="meta-qt5" fetch="https://github.com/meta-qt5/" pushurl="https://github.com/meta-qt5/" />
 	<remote name="schnitzeltony" fetch="https://github.com/schnitzeltony/" pushurl="https://github.com/schnitzeltony/" />
-
+	<remote name="kraj" fetch="git://github.com/kraj/" pushurl="git://github.com/kraj/" />
+	<remote name="rust" fetch="git://github.com/meta-rust/" pushurl="git://github.com/meta-rust/" />
 	<remote name="shimada" fetch="https://github.com/dejiko/" pushurl="https://github.com/dejiko/" />
 	
 	<default revision="master" />
 
 	<!-- Yocto Layers -->
-	<project path="poky" name="poky" remote="yocto" revision="sumo" />
+	<project path="poky" name="poky" remote="yocto" revision="warrior" />
 
 	<!-- Openembedded Layers -->
-	<project path="meta-openembedded" name="meta-openembedded" remote="openembedded" revision="sumo" />
+	<project path="meta-openembedded" name="meta-openembedded" remote="openembedded" revision="warrior" />
 	<project path="meta-browser" name="meta-browser" remote="OSSystems" revision="master" />
+	<project path="meta-clang" name="meta-clang" remote="kraj" revision="master" />
+	<project path="meta-rust" name="meta-rust" remote="rust" revision="master" />
 
 	<!-- function Layers -->
-	<project path="meta-qt5" name="meta-qt5" remote="meta-qt5" revision="sumo" />
-	<project path="meta-qt5-extra" name="meta-qt5-extra" remote="schnitzeltony" revision="sumo" />
+	<project path="meta-qt5" name="meta-qt5" remote="meta-qt5" revision="warrior" />
+	<project path="meta-qt5-extra" name="meta-qt5-extra" remote="schnitzeltony" revision="master" />
 
 	<!-- distro Layers -->
 	<project path="meta-cocon" name="meta-cocon" remote="shimada" revision="master" />
 
 	<!-- bsp Layers -->
-	<project path="meta-raspberrypi" name="meta-raspberrypi" remote="yocto" revision="sumo" />
-	<project path="meta-sunxi" name="meta-sunxi" remote="linux-sunxi" revision="sumo" />
+	<project path="meta-raspberrypi" name="meta-raspberrypi" remote="yocto" revision="warrior" />
+	<project path="meta-sunxi" name="meta-sunxi" remote="linux-sunxi" revision="warrior" />
 	<project path="meta-coconport" name="meta-coconport" remote="shimada" revision="master" />
 	<project path="meta-liveimage-init" name="meta-liveimage-init" remote="shimada" revision="master" />
 </manifest>
